@@ -1,4 +1,4 @@
-{% extends "adminlte/base.html" %}
+  {% extends "adminlte/base.html" %}
 {% import "adminlte/layout.html" as layout with context %}
 {% import "adminlte/widgets.html" as widgets with context %}
 
@@ -281,6 +281,13 @@
                   <a href="{{ url_for('lockscreen') }}">
                     <i class="fa fa-circle-o"></i>
                     Lockscreen
+                  </a>
+                </li>
+
+                <li>
+                  <a href="{{ url_for('process_data') }}">
+                    <i class="fa fa-circle-o"></i>
+                    Proses Data Banjir
                   </a>
                 </li>
               </ul>
