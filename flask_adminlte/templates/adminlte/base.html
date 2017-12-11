@@ -25,6 +25,8 @@
     <!-- Pace -->
     <link href="{{ adminlte_find_resource('plugins/pace/pace.css', cdn='local') }}" rel="stylesheet" type="text/css">
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+    
     {%- endblock styles %}
     {%- endblock head %}
   </head>
@@ -132,6 +134,14 @@
       </script>
       <!-- Local application JS -->
       <script src="{{ adminlte_find_resource('js/app.js', cdn='local', use_minified=False) }}"></script>
+
+      <script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.12.4.js"></script>
+      <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script><script>
+      $(document).ready(function() {
+        $('#example').DataTable();
+      });
+      </script>
+  
     {%- endblock scripts %}
 
     </body>

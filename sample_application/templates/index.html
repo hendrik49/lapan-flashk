@@ -1,7 +1,6 @@
-  {% extends "adminlte/base.html" %}
+{% extends "adminlte/base.html" %}
 {% import "adminlte/layout.html" as layout with context %}
 {% import "adminlte/widgets.html" as widgets with context %}
-
 {% block navbar %}
         <!-- Sidebar toggle button-->
         <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
@@ -267,14 +266,14 @@
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-folder"></i>
-                <span>Examples</span>
+                <span>Sistem Ototmatisasi Lahan</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
                 <li>
-                  <a href="{{ url_for('login') }}">
+                  <a href="{{ url_for('klasifikasi') }}">
                     <i class="fa fa-circle-o"></i>
-                    Login
+                    Klasifikasi Tutupan Lahan
                   </a>
                 </li>
                 <li>

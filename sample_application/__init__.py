@@ -2,9 +2,9 @@ import dateutil.parser
 
 from flask import Flask, render_template, request
 from flask_adminlte import AdminLTE
-import data_process as dp
+#import data_process as dp
 import os
-import arcpy
+#import arcpy
 import pandas as pd
 from celery import Celery
 
@@ -50,6 +50,11 @@ def create_app(configfile=None):
     @app.route('/login')
     def login():
         return render_template('login.html', current_user=current_user)
+
+
+    @app.route('/klasifikasi')
+    def klasifikasi():
+        return render_template('klasifikasi.html', current_user=current_user)
 
     @app.route('/lockscreen')
     def lockscreen():
